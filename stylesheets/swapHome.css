@@ -1,0 +1,483 @@
+body {
+			margin:0;
+			padding:0;
+			min-width: 1220px;
+		}
+		.header {
+		   font-size: 0;
+		   position: fixed;
+		   background: white;
+		   width: 100%;
+		   z-index: 1;
+		}
+		.header .border {
+	     	height: 10px;
+	        background:linear-gradient(to right,#1399d4,#1bb2b2,#b2796d,#ed526b,#9f4ce9);
+	    }
+	    .logo {
+	        position: relative;
+	        top:18px;
+	    }
+	    .content{
+	    	width: 1210px; 
+	    	margin:0 auto;
+	    	position: relative;
+	    	overflow: hidden;
+	    }
+	    .right {
+	    	position: absolute;
+	    	right: 0px;
+	    	display: inline-block;
+	    }
+	    .header ul {
+	        font-size: 0;
+	        display: inline-block;
+	    }
+	    .header li {
+	    	display: inline-block;
+	    	width: 100px;
+	    	height: 50px;
+	    	font-size: 15px;
+	    	padding-top: 31px;
+	    	text-align: center;
+	    	color:#215482;
+	    }
+	    .header li:hover{
+	    	background: #d9e9f3;
+	    }
+	    li.liOne {
+            background: #62a3cf;
+            color:#fff;
+            font-weight: bold;
+	    }
+	    li.liOne:hover {
+	    	background: #62a3cf;
+	    }
+	    .search {
+	    	border:1px solid #ddd;
+	    	border-radius: 5px;
+	        margin:0 20px 0 50px;
+	        background-color: #f5f5f5; 
+            display: inline-block;
+	    }
+	    .search input {
+	    	border:none;
+            height:30px;
+            margin-bottom: 3px;
+            background: transparent;
+            outline: none;
+            width:80px;
+            transition: 0.5s;
+	    }
+	    input.searchButton {
+	    	background: url("../images/tip.png") no-repeat 3px -25px;
+	    	width:30px;
+	        position: relative;
+            top:7px;
+            cursor: pointer;
+	    }
+	    .login {
+	    	width: 42px;
+	    	height:42px;
+	        background:url(../images/login.png) no-repeat center;
+            background-color: #f5f5f5;
+            border:1px solid #ddd;
+            border-radius: 10px;
+            display: inline-block;
+            position: relative;
+            top:16px;
+	    }
+	    .searchText:focus {
+	    	width: 180px;
+	    }
+	    .items {
+	    	padding:0;
+	    	margin:0;
+	    }
+	    .items li {
+	    	background: url(../images/pic.gif) no-repeat center;
+	    	height:500px;
+	    }
+	    li.items2 {
+	    	background: red;
+	    	display: none;
+	    }
+	    li.items3 {
+	    	background: yellow;
+	    	display: none;
+	    }
+	    li.items4 {
+	    	background: green;
+	    	display: none;
+	    }
+	    .content h2 {
+	    	color:#215482;
+	    	float: left;
+	    }
+	    .instructionVedio {
+	    	background-color: #f0f0f4;
+	    }
+	   #selectTwo,#selectThree,#selectFour,#selectFive,#selectSix,#selectTwo2,#selectThree3,#selectFour4,#selectFive5,#selectSix6,#selectTwo22,#selectThree33,#selectFour44,#selectFive55,#selectSix66 {
+	    	float: left;
+	    	clear:left;
+	    	display: none;
+	    }
+	    .references {
+	    	overflow: hidden;
+	    }
+	    .one {
+	    	float: left;
+	    	width:750px;
+	    	color:#666;
+	    }
+	    #One, #One1,#One11 {
+	    	color:blue;
+	    }
+	    .one li {
+	    	float: right;
+            list-style: none;
+            margin:0 10px 8px 15px;
+	    }
+	    .one li:hover {
+	    	text-decoration: underline;
+	    }
+	    .content .border {
+	    	width: 750px;
+	    	height:2px;
+	    	position: relative;
+	    	top:40px;
+	    	left:135px;
+	    	background: linear-gradient(to right,#1399d4,#1bb2b2,#b2796d,#ed526b,#9f4ce9);
+	    }
+	    .nav {
+	    	float:right;
+	    	width: 290px;
+	    	height: 610px;
+	    	margin-top: 10px;
+	    }
+	    .test,.center {
+           width:120px;
+           height: 45px;
+           background: blue;
+           text-align: center;
+           line-height: 45px;
+           background: #3498db;
+           color: white;
+           font-size: 18px;
+           display: inline-block;
+           margin:0 10px 0 0;
+           cursor: pointer;
+           margin-left: 8px;
+	    }
+	    .test {
+	    	background: orange;
+	    }
+	    .announcement,.charts,.users,.hot,.question {
+            margin-top: 15px;
+            border-bottom: 1px dotted black;
+            padding-bottom: 5px;
+            margin-left: 8px;
+	    }
+	    .acHeader,.chartsHeader,.usersHeader,.hotHeader,.questionHeader {
+            width: 5px;
+            height:30px;
+            background: blue;
+            display: inline-block;
+	    }
+	    .announcement p,.charts p,.users p,.hot p,.question p {
+	    	display: inline-block;
+	    	font-size: 20px;
+	    	position: relative;
+	    	top:-7px;
+	    	color:#215482;
+	    	margin:0 0 0 25px;
+	    }
+	    p.acMore,p.chartsMore,p.usersMore,p.hotMore,p.questionMore {
+	    	float: right;
+	    	margin:20px 5px 0 0; 
+	    	font-size: 13px;
+	    }
+	    .announcement a,.charts a,.users a,.hot a,.question a {
+	    	text-decoration: none;
+	    	color:gray;
+	    }
+	    .questionTitle {
+        	margin-top: 30px;
+        }
+        .questionTitle p {
+        	margin:5px;
+        	font-size: 15px;
+        }
+        .questionTitle a {
+        	text-decoration: none;
+        }
+	    .list ul,.chartsList ul,.usersList ul{
+            list-style: none;
+			padding:0;
+			font-size: 15px;
+			margin-left: 8px;
+	    }
+	    .list li,.chartsList li{
+	    	margin-top:10px;
+	    	height: 20px;
+	    }
+	    .usersList li {
+	    	margin-top: 10px;
+	    	margin-left: 10px;
+	    }
+	    .chartsList span {
+	    	width: 18px;
+	    	height: 18px;
+	    	display: inline-block;
+	    	text-align: center;
+	    	line-height: 18px;
+	    	margin-right: 5px;
+	    	background: #f9deb7;
+	    	color:white;
+	    	font-size: 10px;
+	    	position: relative;
+	    	top:-1px;
+	    }
+	    .usersList span {
+	    	float: right;
+	    	color:#ddd;
+	    	position: relative;
+	    	top:12px;
+	    	font-size: 13px;
+	    }
+ 	    .list a,.chartsList a,.title a,.name {
+	    	text-decoration: none;
+	    	color:#666;
+	    }
+	    .words {
+	    	text-decoration: none;
+	    	color:#666;
+	    	position: relative;
+	    	top:-13px;
+	    	left:10px;
+	    }
+	    .announcement a:hover,.charts a:hover,.users a:hover,.hot a:hover,.question a:hover,.list a:hover,.chartsList a:hover,.usersList a:hover,.title a:hover,.author a:hover,.name:hover,.video a:hover,.php a:hover,.questionTitle a:hover,.footerContent a:hover,.hotRead a:hover,.hotContribution a:hover,.hotSummary a:hover {text-decoration: underline;}
+	    span.one {
+	    	background: #f88a8c;
+	    }
+	    span.two {
+	    	background: #f9b48b;
+	    }
+	    .video {
+	    	float: left;
+	    	margin:0 20px 25px 0;
+	    }
+	    .video p {
+	    	font-size: 13px;
+	    	margin:5px;
+	    }
+	    .video a {
+	    	text-decoration: none;
+	    	color:#215482;
+	    }
+	    .video span {
+	    	padding-left: 22px;
+	    	font-size: 13px;
+	    	color:#9aabb8;
+	    }
+	    .special {
+	    	background: url(../images/video1.gif);
+	    	height:330px;
+	    	width: 428px;
+	    	float: left;
+	    	clear:left;
+	    	margin:0 25px 0 0;
+	    }
+	    .special div {
+	    	margin-top: 300px;
+	    	background: rgba(0,0,0,0.8);
+	    	height:30px;
+	    }
+ 	    .special p {
+            color:#fff;
+            float: left;
+            margin:8px 0 0 10px;
+            margin-right: 80px;
+	    }
+	    .special a {
+	    	color: #fff;
+	    }
+	    .link {
+	    	width: 428px;
+	    	height: 300px;
+	    	position: absolute;
+	    }
+	    .special span {
+	    	float: left;
+	    	margin-top: 10px;
+	    	color: #fff;
+	    	padding-left: 25px;
+	    	font-size: 12px;
+	    	margin-right: 20px;
+	    }
+	    .eyes {
+	    	background: url(../images/tip.png) no-repeat 0 -68px;
+	    }
+	    .heart {
+            background: url(../images/tip.png) no-repeat 0 -93px;
+	    }
+	    .comment {
+	    	background: url(../images/tip1.png) no-repeat 0 -60px;
+	    }
+	    .php {
+	    	float: left;
+            margin-right: 30px;
+	    }
+	    .php ul{
+	    	list-style: none;
+	    	padding: 0 0 20px 0;
+	    	border-bottom: 1px dashed #ddd;
+	    }
+	    .php li {
+	    	font-size: 13px;
+	    	width: 250px;
+	    	height:25px;
+	    	line-height: 25px;
+	    	padding-left: 25px;
+	    	margin-top: 10px;
+	    }
+	    .word {
+	    	background: url(../images/tip.png) no-repeat 0 -112px;
+	    }
+	    .pdf {
+	    	background: url(../images/tip.png) no-repeat 0 -137px;
+	    }
+	    .php li span {
+	    	float: right;
+	    	font-size: 10px;
+	    }
+	    .php a {
+	    	text-decoration: none;
+	    	color: #666;
+	    }
+	    .php p {
+	    	color:#215482;
+	    }
+	    .notes {
+	    	background: #f0f0f4;
+	    	overflow: hidden;
+	    }
+	    .note {
+	    	float: left;
+	    	width: 400px;
+	    	border-bottom:1px dashed #ddd;
+	    	padding-bottom: 15px;
+	    	margin-left: 80px;
+	    }
+	    .noteOne {
+	    	margin-left: 0;
+	    	margin-top: 20px;
+	    	clear:left;
+	    }
+	    .noteTwo {
+	    	margin-top: 20px;
+	    }
+	    .noteLeft {
+	    	margin-left: 0;
+	    }
+	    .author {
+         margin:8px 0 0 0;
+         font-size: 13px;
+         display: inline-block;
+	    }
+	    .title a,.name {
+	    	color: black;
+	    }
+	    .author a{
+	    	color:#215482;
+	    	margin: 0 5px 0 5px;
+	    	text-decoration: none;
+	    }
+        .noteSpan {
+        	font-size: 13px;
+        	float: right;
+        	padding-left: 25px;
+        	margin-top: 10px;
+        }
+        .hotOne,.hotTwo,.hotThree,.hotFour {
+        	border-bottom: 1px dashed black;
+        	overflow: hidden;
+        	padding-bottom: 25px;
+        	padding-top: 10px;
+        }
+        .hotFour {
+        	border:none;
+        }
+        .hotOne img,.hotTwo img,.hotThree img,.hotFour img {
+           float: left;
+           margin:10px 0 0 10px; 
+        }
+        .hotOne p,.hotTwo p,.hotThree p,.hotFour p {
+        	float: right;
+        	font-size: 13px;
+        	margin:14px 0 0 0;
+        }
+        .hotOne span,.hotTwo span,.hotThree span,.hotFour span {
+            margin: 0 0 0 70px;
+            font-size: 13px;
+            color:#a8b6c1;
+        }
+        p.hotContribution {
+            margin-right: 40px;
+            color:gray;
+        }
+        p.hotRead {
+            color:gray;
+        }
+        .hotRead a,.hotContribution a,.hotSummary a,.footerContent a {
+        	color: #215482;
+        	text-decoration: none;
+        }
+        .forum img {
+        	float: left;
+        	margin-top: 10px;
+        	border-radius: 50px;
+        }
+        .forum span {
+        	margin:0;
+        }
+        .others {
+            margin-left: 70px;
+            margin-bottom: 0;
+        }
+        .forumAuthor {
+        	font-size: 13px;
+        	color:#666;
+        	float: left;
+        	margin:10px 15px 0 15px;
+        }
+        .time {
+        	float: right;
+        	font-size: 13px;
+        	margin-top:10px;
+        	color:#666
+        }
+        .footer {
+        	height:5px;
+        	background: #9aabb8;
+        }
+        .footerContent {
+        	height: 80px;
+        	background: #f5f5f5;
+        }
+        .footerContent ul{
+           list-style: none;
+           float: right;
+           margin:20px 0 10px 0;
+        }
+        .footerContent li {
+        	float: left;
+        	margin-left: 10px;
+        }
+        .footerContent p {
+            float: right;
+            clear:right;
+            margin:0;
+            font-size: 13px;
+            color:#ddd;
+        }

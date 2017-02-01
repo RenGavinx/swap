@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>交流论坛</title>
+	<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script>
+		$(function (){
+             $(".page li").mouseenter(function (){
+                  $(this).css({"border-color":"white","cursor":"pointer","color":"#215482"});
+              });
+             $(".page li").mouseleave(function (){
+                  $(this).css({"border-color":"#666","color":"#666"});
+             });
+		});
+	</script>
+	<link rel="stylesheet" type="text/css" href="./stylesheets/swapChats.css">
+</head>
+<body>
+	<div class="header">
+	  <div class="border"></div>
+	  <div class="content">
+	   <img src="./images/logo.png" alt="" class="logo">
+       <ul>
+      	 <a href="./swapHome.html"><li class="liOne">首页</li></a>
+      	 <a href="./swapVideo.html"><li class="liTwo">教学视频</li></a>
+      	 <a href="./classNote.html"><li class="liThree">课堂笔记</li></a>
+      	 <a href="./swapReferences.html"><li class="liFour">参考资料</li></a>
+      	 <a href="#"><li class="liFive">交流论坛</li></a>
+      	 <a href="#"><li class="liSix">在线考试</li></a>
+       </ul>  
+       <div class="right">
+        <div class="search">
+          <input type="text" placeholder="搜索" class="searchText">
+          <input type="button" class="searchButton" >
+        </div>
+        <div class="login"></div>
+       </div>
+      </div>
+	</div>
+	<div class="menu">
+		<div class="content">
+			<ul>
+				<a href=""><li class="special">论坛精选</li></a>
+				<a href=""><li>Java</li></a>
+				<a href=""><li>Web</li></a>
+				<a href=""><li>MySQL</li></a>
+				<a href=""><li>Android</li></a>
+			</ul>
+			<a href=""><div class="upwardVideo">发帖</div></a>
+			<a href=""><div class="myVideo">我的回复</div></a>
+			<a href=""><div class="collection">我的收藏</div></a>
+		</div>
+	</div>
+	<div class="videoContent">
+		<div class="content">
+			<div class="nav">
+              <div class="users">
+    		 	<div class="usersHeader"></div>
+    		 	<p>人气用户</p>
+    		 	<p class="usersMore"><a href="">更多</a></p>
+    		 </div>
+    		 <div class="usersList">
+    		 <ul style="margin:0">
+    		 	<li><a href=""><img src="./temporary_images/user1.gif" alt=""></a><a href="" class="words">princess</a><span>90439</span></li>
+    		 	<li><a href=""><img src="./temporary_images/user2.gif" alt=""></a><a href="" class="words">princess</a><span>90439</span></li>
+    		 	<li><a href=""><img src="./temporary_images/user3.gif" alt=""></a><a href="" class="words">princess</a><span>90439</span></li>
+    		 	<li><a href=""><img src="./temporary_images/user4.gif" alt=""></a><a href="" class="words">princess</a><span>90439</span></li>
+    		 	<li><a href=""><img src="./temporary_images/user5.gif" alt=""></a><a href="" class="words">princess</a><span>90439</span></li>
+    		 	<li><a href=""><img src="./temporary_images/user6.gif" alt=""></a><a href="" class="words">princess</a><span>90439</span></li>
+    		 	<li><a href=""><img src="./temporary_images/user7.gif" alt=""></a><a href="" class="words">princess</a><span>90439</span></li>
+    		 	<li><a href=""><img src="./temporary_images/user8.gif" alt=""></a><a href="" class="words">princess</a><span>90439</span></li>
+    		 	<li><a href=""><img src="./temporary_images/user9.gif" alt=""></a><a href="" class="words">princess</a><span>90439</span></li>
+    		 	<li><a href=""><img src="./temporary_images/user10.gif" alt=""></a><a href="" class="words">princess</a><span>90439</span></li>
+    		 </div>
+    		 <div class="charts">
+    		 	<div class="chartsHeader"></div>
+    		 	<p>最新资源</p>
+    		 	<p class="chartsMore"><a href="">更多</a></p>
+    		 </div>
+    		 <div class="chartsList">
+    		 <ul>
+    		 	<li><a href="">MYSQL数据库分析</a></li>
+    		 	<li><a href="">秦时明月1</a></li>
+    		 	<li><a href="">XHTML技术详解</a></li>
+    		 	<li><a href="">Java基础视频教学</a></li>
+    		 	<li><a href="">数据库</a></li>
+    		 	<li><a href="">程序员的世界姑娘你不懂的</a></li>
+    		 	<li><a href="">JQuery效果演示</a></li>
+    		 	<li><a href="">ThinkPHP从入门到精通</a></li>
+    		 	<li><a href="">C＃入门知识</a></li>
+    		 	<li><a href="">css1</a></li>
+    		 </ul>
+    		 </div>
+    		 <div class="question" style="margin-top: 40px">
+    		 	<div class="questionHeader"></div>
+    		 	<p>热门问题</p>
+    		 	<p class="questionMore"><a href="">更多</a></p>
+    		  </div>
+    		  <div class="questionTitle">
+    		    <p><a href="" style="color:#215482">男子为办居住证 凌晨2点穿羽绒服排队</a></p>
+    		    <p><a href="" style="color:#ddd">打死都不说</a></p>
+    		  </div>
+    		  <div class="questionTitle">
+    		    <p><a href="" style="color:#215482">蔡英文“双十谈话”被批 台媒：想不战不</a></p>
+    		    <p><a href="" style="color:#ddd">打死都不说</a></p>
+    		  </div>
+    		  <div class="questionTitle">
+    		    <p><a href="" style="color:#215482">两岸和平发展论坛将于11月在北京举行</a></p>
+    		    <p><a href="" style="color:#ddd">打死都不说</a></p>
+    		  </div>
+    		  <div class="questionTitle">
+    		    <p><a href="" style="color:#215482">中俄举行反导问题吹风会：严批美韩部署</a></p>
+    		    <p><a href="" style="color:#ddd">打死都不说</a></p>
+    		  </div>
+    		  <div class="questionTitle">
+    		    <p><a href="" style="color:#215482">1亿非户籍人口将落户城市 农转非不得要</a></p>
+    		    <p><a href="" style="color:#ddd">打死都不说</a></p>
+    		  </div>
+    		  <div class="questionTitle">
+    		    <p><a href="" style="color:#215482">省份明确陪产假期限 快看看你能休多久？</a></p>
+    		    <p><a href="" style="color:#ddd">打死都不说</a></p>
+    		  </div>
+			</div>
+			<div class="chartsContent">
+				<ul class="chartsSpecial">
+					<li class="li1">分类</li>
+					<li class="li2">主题</li>
+					<li class="li3">浏览</li>
+					<li class="li4">回复</li>
+					<li class="li5">上传人</li>
+					<li>上传时间</li>
+				</ul>
+				<ul>
+					<li class="li1"><a href="">[Java]</a></li>
+					<li class="li2"><a href="">java从入门到精通教程--java学习指导文档</a></li>
+					<li class="li3">2653</li>
+					<li class="li4">235</li>
+					<li class="li5"><a href="">打死都不说</a></li>
+					<li>2016-3-24 16:21:34</li>
+				</ul>
+				<ul>
+					<li class="li1"><a href="">[Java]</a></li>
+					<li class="li2"><a href="">java从入门到精通教程--java学习指导文档</a></li>
+					<li class="li3">2653</li>
+					<li class="li4">235</li>
+					<li class="li5"><a href="">打死都不说</a></li>
+					<li>2016-3-24 16:21:34</li>
+				</ul>
+				<ul>
+					<li class="li1"><a href="">[Java]</a></li>
+					<li class="li2"><a href="">java从入门到精通教程--java学习指导文档</a></li>
+					<li class="li3">2653</li>
+					<li class="li4">235</li>
+					<li class="li5"><a href="">打死都不说</a></li>
+					<li>2016-3-24 16:21:34</li>
+				</ul>
+				<ul>
+					<li class="li1"><a href="">[Java]</a></li>
+					<li class="li2"><a href="">java从入门到精通教程--java学习指导文档</a></li>
+					<li class="li3">2653</li>
+					<li class="li4">235</li>
+					<li class="li5"><a href="">打死都不说</a></li>
+					<li>2016-3-24 16:21:34</li>
+				</ul>
+				<ul>
+					<li class="li1"><a href="">[Java]</a></li>
+					<li class="li2"><a href="">java从入门到精通教程--java学习指导文档</a></li>
+					<li class="li3">2653</li>
+					<li class="li4">235</li>
+					<li class="li5"><a href="">打死都不说</a></li>
+					<li>2016-3-24 16:21:34</li>
+				</ul>
+				<ul>
+					<li class="li1"><a href="">[Java]</a></li>
+					<li class="li2"><a href="">java从入门到精通教程--java学习指导文档</a></li>
+					<li class="li3">2653</li>
+					<li class="li4">235</li>
+					<li class="li5"><a href="">打死都不说</a></li>
+					<li>2016-3-24 16:21:34</li>
+				</ul>
+				<ul>
+					<li class="li1"><a href="">[Java]</a></li>
+					<li class="li2"><a href="">java从入门到精通教程--java学习指导文档</a></li>
+					<li class="li3">2653</li>
+					<li class="li4">235</li>
+					<li class="li5"><a href="">打死都不说</a></li>
+					<li>2016-3-24 16:21:34</li>
+				</ul>
+				<ul>
+					<li class="li1"><a href="">[Java]</a></li>
+					<li class="li2"><a href="">java从入门到精通教程--java学习指导文档</a></li>
+					<li class="li3">2653</li>
+					<li class="li4">235</li>
+					<li class="li5"><a href="">打死都不说</a></li>
+					<li>2016-3-24 16:21:34</li>
+				</ul>
+				<ul>
+					<li class="li1"><a href="">[Java]</a></li>
+					<li class="li2"><a href="">java从入门到精通教程--java学习指导文档</a></li>
+					<li class="li3">2653</li>
+					<li class="li4">235</li>
+					<li class="li5"><a href="">打死都不说</a></li>
+					<li>2016-3-24 16:21:34</li>
+				</ul>
+				<ul>
+					<li class="li1"><a href="">[Java]</a></li>
+					<li class="li2"><a href="">java从入门到精通教程--java学习指导文档</a></li>
+					<li class="li3">2653</li>
+					<li class="li4">235</li>
+					<li class="li5"><a href="">打死都不说</a></li>
+					<li>2016-3-24 16:21:34</li>
+				</ul>
+				<ul>
+					<li class="li1"><a href="">[Java]</a></li>
+					<li class="li2"><a href="">java从入门到精通教程--java学习指导文档</a></li>
+					<li class="li3">2653</li>
+					<li class="li4">235</li>
+					<li class="li5"><a href="">打死都不说</a></li>
+					<li>2016-3-24 16:21:34</li>
+				</ul>
+				<ul>
+					<li class="li1"><a href="">[Java]</a></li>
+					<li class="li2"><a href="">java从入门到精通教程--java学习指导文档</a></li>
+					<li class="li3">2653</li>
+					<li class="li4">235</li>
+					<li class="li5"><a href="">打死都不说</a></li>
+					<li>2016-3-24 16:21:34</li>
+				</ul>
+				<ul>
+					<li class="li1"><a href="">[Java]</a></li>
+					<li class="li2"><a href="">java从入门到精通教程--java学习指导文档</a></li>
+					<li class="li3">2653</li>
+					<li class="li4">235</li>
+					<li class="li5"><a href="">打死都不说</a></li>
+					<li>2016-3-24 16:21:34</li>
+				</ul>
+				<ul>
+					<li class="li1"><a href="">[Java]</a></li>
+					<li class="li2"><a href="">java从入门到精通教程--java学习指导文档</a></li>
+					<li class="li3">2653</li>
+					<li class="li4">235</li>
+					<li class="li5"><a href="">打死都不说</a></li>
+					<li>2016-3-24 16:21:34</li>
+				</ul>
+				<ul>
+					<li class="li1"><a href="">[Java]</a></li>
+					<li class="li2"><a href="">java从入门到精通教程--java学习指导文档</a></li>
+					<li class="li3">2653</li>
+					<li class="li4">235</li>
+					<li class="li5"><a href="">打死都不说</a></li>
+					<li>2016-3-24 16:21:34</li>
+				</ul>
+				<ul>
+					<li class="li1"><a href="">[Java]</a></li>
+					<li class="li2"><a href="">java从入门到精通教程--java学习指导文档</a></li>
+					<li class="li3">2653</li>
+					<li class="li4">235</li>
+					<li class="li5"><a href="">打死都不说</a></li>
+					<li>2016-3-24 16:21:34</li>
+				</ul>
+				<ul>
+					<li class="li1"><a href="">[Java]</a></li>
+					<li class="li2"><a href="">java从入门到精通教程--java学习指导文档</a></li>
+					<li class="li3">2653</li>
+					<li class="li4">235</li>
+					<li class="li5"><a href="">打死都不说</a></li>
+					<li>2016-3-24 16:21:34</li>
+				</ul>
+				<ul>
+					<li class="li1"><a href="">[Java]</a></li>
+					<li class="li2"><a href="">java从入门到精通教程--java学习指导文档</a></li>
+					<li class="li3">2653</li>
+					<li class="li4">235</li>
+					<li class="li5"><a href="">打死都不说</a></li>
+					<li>2016-3-24 16:21:34</li>
+				</ul>
+				<ul>
+					<li class="li1"><a href="">[Java]</a></li>
+					<li class="li2"><a href="">java从入门到精通教程--java学习指导文档</a></li>
+					<li class="li3">2653</li>
+					<li class="li4">235</li>
+					<li class="li5"><a href="">打死都不说</a></li>
+					<li>2016-3-24 16:21:34</li>
+				</ul>
+				<ul>
+					<li class="li1"><a href="">[Java]</a></li>
+					<li class="li2"><a href="">java从入门到精通教程--java学习指导文档</a></li>
+					<li class="li3">2653</li>
+					<li class="li4">235</li>
+					<li class="li5"><a href="">打死都不说</a></li>
+					<li>2016-3-24 16:21:34</li>
+				</ul>
+				<ul>
+					<li class="li1"><a href="">[Java]</a></li>
+					<li class="li2"><a href="">java从入门到精通教程--java学习指导文档</a></li>
+					<li class="li3">2653</li>
+					<li class="li4">235</li>
+					<li class="li5"><a href="">打死都不说</a></li>
+					<li>2016-3-24 16:21:34</li>
+				</ul>
+				<ul>
+					<li class="li1"><a href="">[Java]</a></li>
+					<li class="li2"><a href="">java从入门到精通教程--java学习指导文档</a></li>
+					<li class="li3">2653</li>
+					<li class="li4">235</li>
+					<li class="li5"><a href="">打死都不说</a></li>
+					<li>2016-3-24 16:21:34</li>
+				</ul>
+				<ul>
+					<li class="li1"><a href="">[Java]</a></li>
+					<li class="li2"><a href="">java从入门到精通教程--java学习指导文档</a></li>
+					<li class="li3">2653</li>
+					<li class="li4">235</li>
+					<li class="li5"><a href="">打死都不说</a></li>
+					<li>2016-3-24 16:21:34</li>
+				</ul>
+				<ul>
+					<li class="li1"><a href="">[Java]</a></li>
+					<li class="li2"><a href="">java从入门到精通教程--java学习指导文档</a></li>
+					<li class="li3">2653</li>
+					<li class="li4">235</li>
+					<li class="li5"><a href="">打死都不说</a></li>
+					<li>2016-3-24 16:21:34</li>
+				</ul>
+			</div>
+			<div class="page">
+				<ul>
+					<li>上一页</li>
+					<li>1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>5</li>
+					<li>6</li>
+					<li>7</li>
+					<li>8</li>
+					<li>9</li>
+					<li>10</li>
+					<li>下一页</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="footer"></div>
+    <div class="footerContent">
+        <div class="content">
+        	<img src="./images/logo.png" alt="" class="logo">
+        	<ul>
+        		<li><a href="">UI设计</li></a>
+        		<li><a href="">Web前端开发</li></a>
+        		<li><a href="">Java开发</li></a>
+        		<li><a href="">Android开发</li></a>
+        		<li><a href="">嵌入式开发</li></a>
+        	</ul>
+        	<p>版权所有：新开普电子股份有限公司 豫ICP备08102576号</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>视频页</title>
+	<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script>
+		$(function (){
+             $("textarea").keyup(function (){
+             	var x = $("textarea").val().length;
+             	if (x <= 200) {
+             	  $(".words").html(x);
+             	}
+             	else {
+             		alert("超出字数限制");
+             		$(".words").html(x);
+             	}
+             });
+             $(".allComment li").click(function (){
+             	  var x = $(this).siblings().attr("id");
+                  $(this).addClass("cover1");
+                  $("#"+ x + "Comment").css("display","none").siblings().show();
+                  $(this).siblings().removeClass("cover1");
+             });
+             var i=0;
+             function acScroll() {
+             $(".list").find("li").eq(i).clone().appendTo(".list ul");
+             $(".list").find("li").eq(i).animate({marginTop:"-20px"});
+             i++;
+         }
+         timer1=setInterval(acScroll,1800);
+         $('.list').find('ul').hover(function () {
+             clearInterval(timer1);
+         },function () {
+          timer1=setInterval(acScroll,1800);
+          }); 
+		});
+	</script>
+
+    <link rel="stylesheet" type="text/css" href="./stylesheets/swapVideo.css">
+</head>
+<body>
+	<div class="header">
+	  <div class="border"></div>
+	  <div class="content">
+	   <img src="./images/logo.png" alt="" class="logo">
+       <ul>
+      	 <a href="./swapHome.html"><li class="liOne">首页</li></a>
+      	 <a href="#"><li class="liTwo">教学视频</li></a>
+      	 <a href="./classNote.html"><li class="liThree">课堂笔记</li></a>
+      	 <a href="./swapReferences.html"><li class="liFour">参考资料</li></a>
+      	 <a href="./swapChats.html"><li class="liFive">交流论坛</li></a>
+      	 <a href="#"><li class="liSix">在线考试</li></a>
+       </ul>  
+       <div class="right">
+        <div class="search">
+          <input type="text" placeholder="搜索" class="searchText">
+          <input type="button" class="searchButton" >
+        </div>
+        <div class="login"></div>
+       </div>
+      </div>
+	</div>
+	<div class="menu">
+		<div class="content">
+			<ul>
+				<a href=""><li class="special">视频精选</li></a>
+				<a href=""><li>Java视频</li></a>
+				<a href=""><li>Web前端视频</li></a>
+				<a href=""><li>MySQL视频</li></a>
+				<a href=""><li>Android开发视频</li></a>
+			</ul>
+			<a href=""><div class="upwardVideo">上传视频</div></a>
+			<a href=""><div class="myVideo">我的上传</div></a>
+			<a href=""><div class="collection">我的收藏</div></a>
+		</div>
+	</div>
+	<div class="videoContent">
+		<div class="content">
+			<h1>JAVA编程语言入门到开发实战经典学习知识体系</h1>
+			<a href=""><div class="back">返回上一级</div></a>
+			<div class="nav">
+				<div class="announcement">
+    		 	<div class="acHeader"></div>
+    		 	<p>公告</p>
+    		 	<p class="acMore"><a href="">更多</a></p>
+    		 </div>
+    		 <div class="list">
+    		 	<ul>
+    		 		<li><a href="">如果你是名在读大学生，想要互联网创业</a></li>
+    		 		<li><a href="">ios和Android哪个更利于赚钱呢？</a></li>
+    		 		<li><a href="">如果你是名在读大学生，想要互联网创业</a></li>
+    		 		<li><a href="">ios和Android哪个更利于赚钱呢？</a></li>
+    		 	</ul>
+    		 </div>
+    		 <div class="charts">
+    		 	<div class="chartsHeader"></div>
+    		 	<p>视频点击榜</p>
+    		 	<p class="chartsMore"><a href="">更多</a></p>
+    		 </div>
+    		 <div class="chartsList">
+    		 <ul style="height:330px">
+    		 	<li><span class="one">1</span><a href="">MYSQL数据库分析</a></li>
+    		 	<li><span class="two">2</span><a href="">秦时明月1</a></li>
+    		 	<li><span>3</span><a href="">XHTML技术详解</a></li>
+    		 	<li><span>4</span><a href="">Java基础视频教学</a></li>
+    		 	<li><span>5</span><a href="">数据库</a></li>
+    		 	<li><span>6</span><a href="">程序员的世界姑娘你不懂的</a></li>
+    		 	<li><span>7</span><a href="">JQuery效果演示</a></li>
+    		 	<li><span>8</span><a href="">ThinkPHP从入门到精通</a></li>
+    		 	<li><span>9</span><a href="">C＃入门知识</a></li>
+    		 	<li><span>10</span><a href="">css1</a></li>
+    		 </ul>
+    		 </div>
+    		 <div class="question">
+    		 	<div class="questionHeader"></div>
+    		 	<p>热门问题</p>
+    		 	<p class="questionMore"><a href="">更多</a></p>
+    		  </div>
+    		  <div class="questionTitle">
+    		    <p><a href="" style="color:#215482">男子为办居住证 凌晨2点穿羽绒服排队</a></p>
+    		    <p><a href="" style="color:#ddd">打死都不说</a></p>
+    		  </div>
+    		  <div class="questionTitle">
+    		    <p><a href="" style="color:#215482">蔡英文“双十谈话”被批 台媒：想不战不</a></p>
+    		    <p><a href="" style="color:#ddd">打死都不说</a></p>
+    		  </div>
+    		  <div class="questionTitle">
+    		    <p><a href="" style="color:#215482">两岸和平发展论坛将于11月在北京举行</a></p>
+    		    <p><a href="" style="color:#ddd">打死都不说</a></p>
+    		  </div>
+    		  <div class="questionTitle">
+    		    <p><a href="" style="color:#215482">中俄举行反导问题吹风会：严批美韩部署</a></p>
+    		    <p><a href="" style="color:#ddd">打死都不说</a></p>
+    		  </div>
+    		  <div class="questionTitle">
+    		    <p><a href="" style="color:#215482">1亿非户籍人口将落户城市 农转非不得要</a></p>
+    		    <p><a href="" style="color:#ddd">打死都不说</a></p>
+    		  </div>
+    		  <div class="questionTitle">
+    		    <p><a href="" style="color:#215482">省份明确陪产假期限 快看看你能休多久？</a></p>
+    		    <p><a href="" style="color:#ddd">打死都不说</a></p>
+    		  </div>
+			</div>
+			<div class="videoSummary">
+				<p>类别：<span>MySQL</span></p>
+				<p>浏览：<span>66</span></p>
+				<p>收藏：<span>50</span></p>
+				<p>上传时间：<span>2014-02-27 00:58:52</span></p>
+			</div>
+			<video src="/Users/ghren/Movies/test1.mov" controls></video>
+			<div class="videoIntroduce">
+				<p class="viInSpecial">视频简介：</p>
+				<p>百度视频搜索是全球最大的中文视频搜索引擎,拥有最多的中文视频资源,提供用户最完美的观看体验。</p>
+				<p>在百度视频,您可以便捷地找到最新、最热的互联网视频,更有丰富的...</p>
+			</div>
+            <div class="videoRight">
+            	<div class="eyes view">浏览:<span>2334</span></div>
+				<div class="start videoCollection">收藏:<span>2334</span></div>	
+            </div>
+            <div class="recommend">
+            	<h3>为你推荐</h3>
+            	<div class="video">
+    			<a href=""><img src="./images/temp.gif" alt=""></a>
+    		    <p><a href="">JAVA工程师教学视频</a></p>
+    			<div>
+    				<span class="eyes">123</span>
+    				<span class="heart">456</span>
+    			</div>
+    		    </div>
+    		    <div class="video">
+    			<a href=""><img src="./images/temp.gif" alt=""></a>
+    		    <p><a href="">JAVA工程师教学视频</a></p>
+    			<div>
+    				<span class="eyes">123</span>
+    				<span class="heart">456</span>
+    			</div>
+    		    </div>
+    		    <div class="video">
+    			<a href=""><img src="./images/temp.gif" alt=""></a>
+    		    <p><a href="">JAVA工程师教学视频</a></p>
+    			<div>
+    				<span class="eyes">123</span>
+    				<span class="heart">456</span>
+    			</div>
+    		    </div>
+    		    <div class="video">
+    			<a href=""><img src="./images/temp.gif" alt=""></a>
+    		    <p><a href="">JAVA工程师教学视频</a></p>
+    			<div>
+    				<span class="eyes">123</span>
+    				<span class="heart">456</span>
+    			</div>
+    		    </div>
+            </div>
+            <div class="videoComment">
+            	<h3>视频评论</h3>
+            	<textarea></textarea>
+            	<p><span class="words">0</span>/200</p>
+            	<div>提交</div>
+            </div>
+            <div class="allComment">
+            	<ul>
+            		<li id="all" class="cover1">全部评论</li>
+            		<li id ="my" style="margin-left: 35px">我的评论</li>
+            	</ul>
+            </div>
+            <div id="allComment">
+             <div class = "commentContent">
+            	<a href=""><img src="./temporary_images/connect_user1.gif" alt=""></a>
+            	<p><a href="">不动如山</a><span>2016-02-26 12:40:13</span></p>
+            	<p class="special">郑州首家免费素食餐厅因人数过多致提前歇业推荐个网购省钱小利器，已亲身验证 云南出动直升机挖掘机救助被困野象</p>
+            	<span><i class="useful"></i>有用(30)</span>
+            	<span class="useless">没用(30)</span>
+            	<span class="reply">回复(0)</span>
+            	<span class="enjoy">分享</span>
+             </div>
+             <div class = "commentContent">
+            	<a href=""><img src="./temporary_images/connect_user2.gif" alt=""></a>
+            	<p><a href="">不动如山</a><span>2016-02-26 12:40:13</span></p>
+            	<p class="special">郑州首家免费素食餐厅因人数过多致提前歇业推荐个网购省钱小利器，已亲身验证 云南出动直升机挖掘机救助被困野象</p>
+            	<span><i class="useful"></i>有用(30)</span>
+            	<span class="useless">没用(30)</span>
+            	<span class="reply">回复(0)</span>
+            	<span class="enjoy">分享</span>
+             </div>
+             <div class = "commentContent">
+            	<a href=""><img src="./temporary_images/connect_user3.gif" alt=""></a>
+            	<p><a href="">不动如山</a><span>2016-02-26 12:40:13</span></p>
+            	<p class="special">郑州首家免费素食餐厅因人数过多致提前歇业推荐个网购省钱小利器，已亲身验证 云南出动直升机挖掘机救助被困野象素食餐厅因人数过多致提前歇业推荐个网购省钱小利器，已亲身验证 云南出动直升机挖掘机救助被困野象</p>
+            	<span><i class="useful"></i>有用(30)</span>
+            	<span class="useless">没用(30)</span>
+            	<span class="reply">回复(0)</span>
+            	<span class="enjoy">分享</span>
+             </div>
+             <div class = "commentContent">
+            	<a href=""><img src="./temporary_images/connect_user4.gif" alt=""></a>
+            	<p><a href="">不动如山</a><span>2016-02-26 12:40:13</span></p>
+            	<p class="special">郑州首家免费素食餐厅因人数过多致提前歇业推荐个网购省钱小利器</p>
+            	<span><i class="useful"></i>有用(30)</span>
+            	<span class="useless">没用(30)</span>
+            	<span class="reply">回复(0)</span>
+            	<span class="enjoy">分享</span>
+            	<div class = "commentContent special">
+            	<a href=""><img src="./temporary_images/connect_user4.gif" alt=""></a>
+            	<p><a href="">不动如山</a><span>2016-02-26 12:40:13</span></p>
+            	<p class="special">郑州首家免费素食餐厅因人数过多致提前歇业推荐个网购省钱小利器，已亲身验证 云南出动直升机挖掘机救助被困野象</p>
+               </div>
+		     </div>
+		    </div>
+		    <div id="myComment" style="height:300px">
+		    	我的评论区
+		    </div>
+	</div>
+	<div class="footer"></div>
+    <div class="footerContent">
+        <div class="content">
+        	<img src="./images/logo.png" alt="" class="logo">
+        	<ul>
+        		<li><a href="">UI设计</li></a>
+        		<li><a href="">Web前端开发</li></a>
+        		<li><a href="">Java开发</li></a>
+        		<li><a href="">Android开发</li></a>
+        		<li><a href="">嵌入式开发</li></a>
+        	</ul>
+        	<p>版权所有：新开普电子股份有限公司 豫ICP备08102576号</p>
+        </div>
+    </div>
+</body>
+</html>

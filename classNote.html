@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>课堂笔记</title>
+	<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script>
+		$(function (){
+             $("textarea").keyup(function (){
+             	var x = $("textarea").val().length;
+             	if (x <= 200) {
+             	  $(".words").html(x);
+             	}
+             	else {
+             		alert("超出字数限制");
+             		$(".words").html(x);
+             	}
+             });
+             $(".allComment li").click(function (){
+             	  var x = $(this).siblings().attr("id");
+             	  var y = $(this).attr("id");
+                  $(this).addClass("cover1");
+                  $("#"+ x + "Comment").css("display","none").siblings("#" + y + "Comment").show();
+                  $(this).siblings().removeClass("cover1");
+             });
+		});
+	</script>
+	<link rel="stylesheet" type="text/css" href="./stylesheets/classNote.css">
+</head>
+<body>
+    <div class="header">
+	  <div class="border"></div>
+	  <div class="content">
+	   <img src="./images/logo.png" alt="" class="logo">
+       <ul>
+      	 <a href="./swapHome.html"><li class="liOne">首页</li></a>
+      	 <a href="./swapVideo.html"><li class="liTwo">教学视频</li></a>
+      	 <a href="#"><li class="liThree">课堂笔记</li></a>
+      	 <a href="./swapReferences.html"><li class="liFour">参考资料</li></a>
+      	 <a href="./swapChats.html"><li class="liFive">交流论坛</li></a>
+      	 <a href="#"><li class="liSix">在线考试</li></a>
+       </ul>  
+       <div class="right">
+        <div class="search">
+          <input type="text" placeholder="搜索" class="searchText">
+          <input type="button" class="searchButton" >
+        </div>
+        <div class="login"></div>
+       </div>
+      </div>
+	</div>
+	<div class="menu">
+		<div class="content">
+			<ul>
+				<a href=""><li class="special">笔记精选</li></a>
+				<a href=""><li>Java笔记</li></a>
+				<a href=""><li>Web前端笔记</li></a>
+				<a href=""><li>MySQL笔记</li></a>
+				<a href=""><li>Android开发笔记</li></a>
+			</ul>
+			<a href=""><div class="upwardVideo">上传笔记</div></a>
+			<a href=""><div class="myVideo">我的上传</div></a>
+			<a href=""><div class="collection">我的收藏</div></a>
+		</div>
+	</div>
+	<div class="videoContent">
+		<div class="content">
+			<h1>平台建设流程图框架-课堂笔记</h1>
+			<a href=""><div class="back">返回上一级</div></a>
+			<div class="nav">
+              <div class="hot">
+    		 	<div class="hotHeader"></div>
+    		 	<p>热门创作人</p>
+    		 	<p class="hotMore"><a href="">更多</a></p>
+    		  </div>
+    		  <div class="hotOne">
+    		  	<a href=""><img src="./temporary_images/auther1.gif" alt=""></a>
+    		  	<p><a href="" class="name">王高翔</a><span>Java 工程师</span></p>
+    		  	<p class="hotRead">总阅读<a href="">1311</a>次</p>
+    		  	<p class="hotContribution">贡献<a href="">646</a>篇</p>
+    		  	<p class="hotSummary"><a href="">A股迎来反弹窗口期 后市有望...</a></p>
+    		  </div>
+    		  <div class="hotTwo">
+    		  	<a href=""><img src="./temporary_images/auther2.gif" alt=""></a>
+    		  	<p><a href="" class="name">王高翔</a><span>Java 工程师</span></p>
+    		  	<p class="hotRead">总阅读<a href="">1311</a>次</p>
+    		  	<p class="hotContribution">贡献<a href="">646</a>篇</p>
+    		  	<p class="hotSummary"><a href="">A股迎来反弹窗口期 后市有望...</a></p>
+    		  </div>
+    		  <div class="hotThree">
+    		  	<a href=""><img src="./temporary_images/auther3.gif" alt=""></a>
+    		  	<p><a href="" class="name">王高翔</a><span>Java 工程师</span></p>
+    		  	<p class="hotRead">总阅读<a href="">1311</a>次</p>
+    		  	<p class="hotContribution">贡献<a href="">646</a>篇</p>
+    		  	<p class="hotSummary"><a href="">A股迎来反弹窗口期 后市有望...</a></p>
+    		  </div>
+    		  <div class="hotFour">
+    		  	<a href=""><img src="./temporary_images/auther4.gif" alt=""></a>
+    		  	<p><a href="" class="name">王高翔</a><span>Java 工程师</span></p>
+    		  	<p class="hotRead">总阅读<a href="">1311</a>次</p>
+    		  	<p class="hotContribution">贡献<a href="">646</a>篇</p>
+    		  	<p class="hotSummary"><a href="">A股迎来反弹窗口期 后市有望...</a></p>
+    		  </div>
+    		 <div class="charts">
+    		 	<div class="chartsHeader"></div>
+    		 	<p>最新笔记</p>
+    		 	<p class="chartsMore"><a href="">更多</a></p>
+    		 </div>
+    		 <div class="chartsList">
+    		 <ul>
+    		 	<li><a href="">MYSQL数据库分析</a></li>
+    		 	<li><a href="">秦时明月1</a></li>
+    		 	<li><a href="">XHTML技术详解</a></li>
+    		 	<li><a href="">Java基础视频教学</a></li>
+    		 	<li><a href="">数据库</a></li>
+    		 	<li><a href="">程序员的世界姑娘你不懂的</a></li>
+    		 	<li><a href="">JQuery效果演示</a></li>
+    		 	<li><a href="">ThinkPHP从入门到精通</a></li>
+    		 	<li><a href="">C＃入门知识</a></li>
+    		 	<li><a href="">css1</a></li>
+    		 </ul>
+    		 </div>
+    		 <div class="question" style="margin-top: 40px">
+    		 	<div class="questionHeader"></div>
+    		 	<p>热门问题</p>
+    		 	<p class="questionMore"><a href="">更多</a></p>
+    		  </div>
+    		  <div class="questionTitle">
+    		    <p><a href="" style="color:#215482">男子为办居住证 凌晨2点穿羽绒服排队</a></p>
+    		    <p><a href="" style="color:#ddd">打死都不说</a></p>
+    		  </div>
+    		  <div class="questionTitle">
+    		    <p><a href="" style="color:#215482">蔡英文“双十谈话”被批 台媒：想不战不</a></p>
+    		    <p><a href="" style="color:#ddd">打死都不说</a></p>
+    		  </div>
+    		  <div class="questionTitle">
+    		    <p><a href="" style="color:#215482">两岸和平发展论坛将于11月在北京举行</a></p>
+    		    <p><a href="" style="color:#ddd">打死都不说</a></p>
+    		  </div>
+    		  <div class="questionTitle">
+    		    <p><a href="" style="color:#215482">中俄举行反导问题吹风会：严批美韩部署</a></p>
+    		    <p><a href="" style="color:#ddd">打死都不说</a></p>
+    		  </div>
+    		  <div class="questionTitle">
+    		    <p><a href="" style="color:#215482">1亿非户籍人口将落户城市 农转非不得要</a></p>
+    		    <p><a href="" style="color:#ddd">打死都不说</a></p>
+    		  </div>
+    		  <div class="questionTitle">
+    		    <p><a href="" style="color:#215482">省份明确陪产假期限 快看看你能休多久？</a></p>
+    		    <p><a href="" style="color:#ddd">打死都不说</a></p>
+    		  </div>
+			</div>
+			<div class="videoSummary">
+				<p>类别：<span>MySQL</span></p>
+				<p>浏览：<span>66</span></p>
+				<p>收藏：<span>50</span></p>
+				<p>上传时间：<span>2014-02-27 00:58:52</span></p>
+			</div>
+			<p class = "special1">
+			中新网10月13日电 据香港文汇报报道，韩国三星对于频生爆炸事故的旗舰式手机Galaxy Note7（下称Note7），终有香港及澳门区全数退款或换机安排，但由于条件颇多，引起市民不满。三星电子香港12日透过公关公司发稿表示，已购买Note7的顾客可于即日起至12月31日带同手机（包括原厂包装盒及配件）及收据正本，到原购买地点作全数退款或更换至Galaxy S7 edge。
+			</p>
+			<img src="./temporary_images/newpic.gif" alt="" style="display: block;margin:0 auto">	
+			<p class = "special">
+			香港多家电讯商均表示，可以安排退款或换其他型号手机；至于不是买“行货”的顾客，三星香港客户服务中心称是个别个案，会安排专人跟进。
+			</p>
+			<p class = "special1">
+			三星电子香港列出两个选项予顾客选择，分别是更换至Galaxy S7 edge及全数退款。前者需要顾客携同正本收据、 原厂包装盒及随机配件，方能更换至Galaxy S7 edge并取回两者差价， 亦可另选额外礼品; 后者同样要准备上述所需文件或对象,方能获全数退款。
+			</p>
+			<p class = "special1">
+			三星续指，部分电讯商、特约零售商或经销商等，或会有其他更换或退款安排，建议顾客亲身向原购买地点查询。三星再次强调，公司已停止全球生产和出售Note7，已购买Note7的消费者应关闭电源并停止使用。
+			</p>
+			<p class="special1 padding">
+			与此同时，各电讯商或零售商亦公布相关措施，如丰泽在社交媒体表示，根据三星日前发出有关“停止出售Note7及更换手机或退款”声明，顾客可于丰泽作换货或退款。
+			</p>
+			<div class="recommend">
+				<h3>为你推荐</h3>
+				<div><a href="">java从入门到精通教程--java学习指导文档</a><span>2016-3-24 16:21:34</span></div>
+				<div><a href="">郑州论坛车友端午自驾去山西双底，好干净凉爽的地方！</a><span>2016-3-24 16:21:34</span></div>
+				<div><a href="">2016首届河南直播网红汽车模特大赛决赛亮相郑州国际车展</a><span>2016-3-24 16:21:34</span></div>
+				<div><a href="">乌镇—杭州，然后直奔山东—日照 随心所欲滴不要不滴</a><span>2016-3-24 16:21:34</span></div>
+				<div><a href="">java从入门到精通教程--java学习指导文档</a><span>2016-3-24 16:21:34</span></div>
+			</div>
+			<div class="videoComment">
+            	<h3>视频评论</h3>
+            	<textarea></textarea>
+            	<p><span class="words">0</span>/200</p>
+            	<div>提交</div>
+            </div>
+            <div class="allComment">
+            	<ul>
+            		<li class="cover1" id="all">全部评论</li>
+            		<li id="my" style="margin-left: 35px">我的评论</li>
+            	</ul>
+            </div>
+            <div id="allComment">
+             <div class = "commentContent">
+            	<a href=""><img src="./temporary_images/connect_user2.gif" alt=""></a>
+            	<p><a href="">不动如山</a><span>2016-02-26 12:40:13</span></p>
+            	<p class="special">郑州首家免费素食餐厅因人数过多致提前歇业推荐个网购省钱小利器，已亲身验证 云南出动直升机挖掘机救助被困野象</p>
+            	<span><i class="useful"></i>有用(30)</span>
+            	<span class="useless">没用(30)</span>
+            	<span class="reply">回复(0)</span>
+            	<span class="enjoy">分享</span>
+             </div>
+             <div class = "commentContent">
+            	<a href=""><img src="./temporary_images/connect_user2.gif" alt=""></a>
+            	<p><a href="">不动如山</a><span>2016-02-26 12:40:13</span></p>
+            	<p class="special">郑州首家免费素食餐厅因人数过多致提前歇业推荐个网购省钱小利器，已亲身验证 云南出动直升机挖掘机救助被困野象</p>
+            	<span><i class="useful"></i>有用(30)</span>
+            	<span class="useless">没用(30)</span>
+            	<span class="reply">回复(0)</span>
+            	<span class="enjoy">分享</span>
+             </div>
+             <div class = "commentContent">
+            	<a href=""><img src="./temporary_images/connect_user3.gif" alt=""></a>
+            	<p><a href="">不动如山</a><span>2016-02-26 12:40:13</span></p>
+            	<p class="special">郑州首家免费素食餐厅因人数过多致提前歇业推荐个网购省钱小利器，已亲身验证 云南出动直升机挖掘机救助被困野象素食餐厅因人数过多致提前歇业推荐个网购省钱小利器，已亲身验证 云南出动直升机挖掘机救助被困野象</p>
+            	<span><i class="useful"></i>有用(30)</span>
+            	<span class="useless">没用(30)</span>
+            	<span class="reply">回复(0)</span>
+            	<span class="enjoy">分享</span>
+             </div>
+             <div class = "commentContent">
+            	<a href=""><img src="./temporary_images/connect_user4.gif" alt=""></a>
+            	<p><a href="">不动如山</a><span>2016-02-26 12:40:13</span></p>
+            	<p class="special">郑州首家免费素食餐厅因人数过多致提前歇业推荐个网购省钱小利器</p>
+            	<span><i class="useful"></i>有用(30)</span>
+            	<span class="useless">没用(30)</span>
+            	<span class="reply">回复(0)</span>
+            	<span class="enjoy">分享</span>
+            	<div class = "commentContent special">
+            	<a href=""><img src="./temporary_images/connect_user4.gif" alt=""></a>
+            	<p><a href="">不动如山</a><span>2016-02-26 12:40:13</span></p>
+            	<p class="special">郑州首家免费素食餐厅因人数过多致提前歇业推荐个网购省钱小利器，已亲身验证 云南出动直升机挖掘机救助被困野象</p>
+                </div>
+		     </div>
+		    </div>
+		    <div id="myComment">
+		    	我的评论区
+		    </div>
+	</div>
+	<div class="footer"></div>
+    <div class="footerContent">
+        <div class="content">
+        	<img src="./images/logo.png" alt="" class="logo">
+        	<ul>
+        		<li><a href="">UI设计</li></a>
+        		<li><a href="">Web前端开发</li></a>
+        		<li><a href="">Java开发</li></a>
+        		<li><a href="">Android开发</li></a>
+        		<li><a href="">嵌入式开发</li></a>
+        	</ul>
+        	<p>版权所有：新开普电子股份有限公司 豫ICP备08102576号</p>
+        </div>
+    </div>
+</body>
+</html>

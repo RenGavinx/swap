@@ -1,0 +1,319 @@
+body {
+			margin:0;
+			padding:0;
+			min-width: 1220px;
+		}
+		.header {
+		   font-size: 0;
+		   position: fixed;
+		   background: white;
+		   width: 100%;
+		   z-index: 1;
+		   top:0;
+		}
+		.header .border {
+	     	height: 10px;
+	        background:linear-gradient(to right,#1399d4,#1bb2b2,#b2796d,#ed526b,#9f4ce9);
+	    }
+	    .logo {
+	        position: relative;
+	        top:18px;
+	    }
+	    .content {
+	    	width: 1210px; 
+	    	margin:0 auto;
+	    	position: relative;
+	    	overflow: hidden;
+	    }
+	    .right {
+	    	position: absolute;
+	    	right: 0px;
+	    	display: inline-block;
+	    }
+	    .header ul {
+	        font-size: 0;
+	        display: inline-block;
+	    }
+	    .header li {
+	    	display: inline-block;
+	    	width: 100px;
+	    	height: 50px;
+	    	font-size: 15px;
+	    	padding-top: 31px;
+	    	text-align: center;
+	    	color:#215482;
+	    }
+	    .header li:hover{
+	    	background: #d9e9f3;
+	    }
+	    li.liFive {
+            background: #62a3cf;
+            color:#fff;
+            font-weight: bold;
+	    }
+	    li.liFive:hover {
+	    	background: #62a3cf;
+	    }
+	    .search {
+	    	border:1px solid #ddd;
+	    	border-radius: 5px;
+	        margin:0 20px 0 50px;
+	        background-color: #f5f5f5; 
+            display: inline-block;
+	    }
+	    .search input {
+	    	border:none;
+            height:30px;
+            margin-bottom: 3px;
+            background: transparent;
+            outline: none;
+            width:80px;
+            transition: 0.5s;
+	    }
+	    input.searchButton {
+	    	background: url("../images/tip.png") no-repeat 3px -25px;
+	    	width:30px;
+	        position: relative;
+            top:7px;
+            cursor: pointer;
+	    }
+	    .login {
+	    	width: 42px;
+	    	height:42px;
+	        background:url(../images/login.png) no-repeat center;
+            background-color: #f5f5f5;
+            border:1px solid #ddd;
+            border-radius: 10px;
+            display: inline-block;
+            position: relative;
+            top:16px;
+	    }
+	    .searchText:focus {
+	    	width: 180px;
+	    }
+	    .menu {
+	    	background: #d4e3ee;
+	    	margin-top: 90px;
+	    }
+	    .menu ul {
+	    	float: left;
+	    	list-style: none;
+	    	margin:0;
+	    	padding:0;
+	    }
+	    .menu li {
+	    	float: left;
+	    	color:#215482;
+	    	height:70px;
+	    	line-height: 70px;
+	    	padding: 0 20px 0 20px;
+	        font-size:14px;
+	    }
+	    .menu li:hover {
+	    	background: #CBDEEE;
+	    }
+	    .menu ul a {
+	    	float: left;
+	    }
+	    li.special {
+	    	border-bottom: 2px solid #215484;
+	    	font-weight: bold;
+	    }
+	    .upwardVideo,.myVideo,.collection {
+	    	float: right;
+	    	width: 100px;
+	    	height: 35px;
+	    	line-height: 35px;
+	    	background: #fff;
+	    	margin:15px 0 0 10px; 
+	    	text-align: center;
+	    	color:#215482;
+	    	font-size: 14px;
+	    }
+	    .upwardVideo {
+	    	background: #ffb96d;
+	    	color:#c65528;
+	    }
+	    .nav {
+	    	float:right;
+	    	width: 290px;
+	    	height: 1480px;
+	    	margin-top: 20px;
+	    }
+	    .charts,.users,.question {
+            margin-top: 15px;
+            border-bottom: 1px dotted black;
+            padding-bottom: 5px;
+            margin-left: 8px;
+	    }
+	    .chartsHeader,.usersHeader,.questionHeader {
+            width: 5px;
+            height:30px;
+            background: blue;
+            display: inline-block;
+	    }
+	    .charts p,.users p,.question p {
+	    	display: inline-block;
+	    	font-size: 20px;
+	    	position: relative;
+	    	top:-7px;
+	    	color:#215482;
+	    	margin:0 0 0 25px;
+	    }
+	    p.chartsMore,p.usersMore,p.questionMore {
+	    	float: right;
+	    	margin:20px 5px 0 0; 
+	    	font-size: 13px;
+	    }
+	    .charts a,.users a,.question a {
+	    	text-decoration: none;
+	    	color:gray;
+	    }
+	    .questionTitle {
+        	margin-top: 30px;
+        }
+        .questionTitle p {
+        	margin:5px;
+        	font-size: 15px;
+        }
+        .questionTitle a {
+        	text-decoration: none;
+        }
+	    .chartsList ul,.usersList ul{
+            list-style: none;
+			padding:0;
+			font-size: 15px;
+			margin-left: 25px;
+	    }
+	    .chartsList li{
+	    	margin-top:12px;
+	    }
+	    .chartsList li:before {
+	    	content:"•";
+	    	color:#ddd;
+	    	margin-right: 10px;
+	    }
+	    .usersList li {
+	    	margin-top: 10px;
+	    	margin-left: 10px;
+	    }
+	    .chartsList span {
+	    	width: 18px;
+	    	height: 18px;
+	    	display: inline-block;
+	    	text-align: center;
+	    	line-height: 18px;
+	    	margin-right: 5px;
+	    	background: #f9deb7;
+	    	color:white;
+	    	font-size: 10px;
+	    	position: relative;
+	    	top:-1px;
+	    }
+	    .usersList span {
+	    	float: right;
+	    	color:#ddd;
+	    	position: relative;
+	    	top:12px;
+	    	font-size: 13px;
+	    }
+ 	    .chartsList a,.title a,.name {
+	    	text-decoration: none;
+	    	color:#666;
+	    }
+	   .charts a:hover,.users a:hover,.question a:hover,.chartsList a:hover,.usersList a:hover,.name:hover,.questionTitle a:hover,.recommend a:hover,.content a:hover,.chartsContent a:hover {text-decoration: underline;}
+	   .words {
+	    	text-decoration: none;
+	    	color:#666;
+	    	position: relative;
+	    	top:-13px;
+	    	left:10px;
+	    }
+	    .chartsContent {
+        	float:left;
+        	margin-top: 30px;
+        }
+        .chartsContent ul {
+        	margin:0;
+        	list-style: none;
+        	padding:0;
+        	overflow: hidden;
+        	padding:10px 0 18px 0;
+        	border-bottom: 1px dashed #ddd;
+        	margin-bottom: 15px;
+        }
+        .chartsContent li {
+        	float: left;
+        	color:#777;
+        	font-size: 14px;
+        }
+        li.li1 {
+            width:70px;
+            font-size: 16px;
+        }
+        li.li2 {
+        	width:400px;
+        	font-size: 16px;
+        }
+        .li3,.li4 {
+        	width:60px;
+        }
+        .li5 {
+        	width:90px;
+        }
+        ul.chartsSpecial {
+        	border-bottom: 1px solid #ddd;
+        }
+        ul.chartsSpecial li {
+        	font-size: 14px;
+        }
+        .chartsContent a {
+        	text-decoration: none;
+        	color:#0099CC;
+        }
+        .li2 a {
+        	color:#666;
+        }
+        .page {
+        	float: left;
+        	clear:left;
+        }
+        .page ul {
+        	list-style: none;
+        }
+        .page li {
+        	float: left;
+        	padding:5px 10px 5px 10px;
+        	border:1px solid #666;
+            margin-right: 20px;   
+
+        }
+	    .footer {
+        	height:5px;
+        	background: #9aabb8;
+        	margin-top: 15px;
+        }
+        .footerContent {
+        	height: 80px;
+        	background: #f5f5f5;
+        }
+        .footerContent ul{
+           list-style: none;
+           float: right;
+           margin:20px 0 10px 0;
+        }
+        .footerContent li {
+        	float: left;
+        	margin-left: 10px;
+        }
+        .footerContent p {
+            float: right;
+            clear:right;
+            margin:0;
+            font-size: 13px;
+            color:#ddd;
+        }
+        .footerContent a {
+        	color: #215482;
+        	text-decoration: none;
+        }
