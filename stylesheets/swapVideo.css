@@ -245,7 +245,7 @@ body {
             float: left;
             background: #222;
             margin-top: 20px;
-            padding: 20px;
+            padding: 0 10px 5px 10px;
         }
         .videoIntroduce p {
           font-size: 14px;
