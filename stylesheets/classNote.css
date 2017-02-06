@@ -121,7 +121,7 @@ body {
 	    }
 	    h1 {
 	    	float: left;
-	    	margin-bottom: 0;
+	    	margin:15px 0 0 0;
 	    }
 	    .upwardVideo,.myVideo,.collection,.back {
 	    	float: right;
@@ -154,6 +154,7 @@ body {
 	    .videoSummary,.recommend,.videoComment {
         	float: left;
         	margin-top:10px;
+        	clear: left;
         }
         .videoSummary p {
         	margin:0 25px 0 0;

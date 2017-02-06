@@ -368,6 +368,7 @@ body {
 	    	border-bottom:1px dashed #ddd;
 	    	padding-bottom: 15px;
 	    	margin-left: 80px;
+	    	height:75px;
 	    }
 	    .noteOne {
 	    	margin-left: 0;
@@ -410,12 +411,14 @@ body {
         }
         .hotOne img,.hotTwo img,.hotThree img,.hotFour img {
            float: left;
-           margin:10px 0 0 10px; 
+           margin:0 0 0 10px; 
+           height: 80px;
         }
         .hotOne p,.hotTwo p,.hotThree p,.hotFour p {
         	float: right;
         	font-size: 13px;
-        	margin:14px 0 0 0;
+        	margin:0 0 10px 0;
+        	height: 20px;
         }
         .hotOne span,.hotTwo span,.hotThree span,.hotFour span {
             margin: 0 0 0 70px;
